@@ -10,7 +10,7 @@ const connect = function () {
 
   conn.on("connect", () => {
     // code that does something when the connection is first established
-      conn.write("Welcome, KC")
+      conn.write("Welcome")
   });
 
   // interpret incoming data as text
