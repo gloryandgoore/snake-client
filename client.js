@@ -7,10 +7,12 @@ const connect = function () {
     port: 50541 // PORT number here,
    
   });
-
+  conn.on('connect', () => {
+    conn.write('Name: CG');
+  });
   conn.on("connect", () => {
     // code that does something when the connection is first established
-      conn.write("Welcome")
+      console.log("Successfully connected to game server")
   });
 
   // interpret incoming data as text
